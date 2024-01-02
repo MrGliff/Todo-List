@@ -1,0 +1,126 @@
+html {
+    margin: 0;
+    padding: 0;
+    behavior: smooth;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #b3c0a4;
+}
+
+h1 {
+    text-align: center;
+}
+
+hr {
+    border: 1px solid black;
+    margin-bottom: 1rem;
+}
+
+.todoInput {
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 3px;
+    width: 230px;
+    height: 1.2rem;
+}
+
+.todoInput, .dateInput {
+    margin-right: 1rem;
+}
+
+.dateInput {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.input {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.todoList {
+    display: grid;
+    grid-template-columns: 200px 150px 100px 100px;
+    grid-row-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.add {
+    border: none;
+    border-radius: 5px;
+    font-size: small;
+    height: 2rem;
+    width: 6.25rem;
+    background-color: #FCBF49;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: medium;
+    font-weight: bold;
+    transition: 0.1s ease-in-out;
+
+}
+
+.add:hover {
+    background-color: #e6a626;
+}
+
+.deleteButton {
+    border: none;
+    border-radius: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: small;
+    font-weight: bold;
+    height: 2rem;
+    /* width: 5rem; */
+    background-color: #f24236;
+    color: white;
+    transition: 0.1s ease-in-out;
+}
+
+.deleteButton:hover {
+    background-color: rgb(209, 59, 48);
+    color: white;
+    transition: 0.1s ease-in-out;
+}
+
+.incompleteButton {
+    border: none;
+    border-radius: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: small;
+    font-weight: bold;
+    height: 2rem;
+    padding: 1px;
+    width: 6rem;
+    background-color: #6ac775;
+    background-color: #767676;
+    color: white;
+    margin-right: 16px;
+    transition: 0.1s ease-in-out;
+}
+
+.incompleteButton:hover {
+    background-color: #5e5e5e;
+}
+
+.completeButton {
+    border: none;
+    border-radius: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: small;
+    font-weight: bold;
+    height: 2rem;
+    padding: 1px;
+    width: 6rem;
+    background-color: #6ac775;
+    color: white;
+    margin-right: 16px;
+    transition: 0.1s ease-in-out;
+}
+
+.completeButton:hover {
+    background-color: #59a762;
+}
