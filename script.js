@@ -1,4 +1,4 @@
-const todoList = [{
+let todoList = [{
     name: 'watch youtube',
     dueDate: '2023-12-31',
     isCompleted: 0
@@ -77,4 +77,13 @@ document.body.addEventListener('keydown', (event) => {
 
 function sortTodo() {
     todoList.sort((a, b) => a.isCompleted - b.isCompleted);
+}
+
+function clearAll() {
+    if(todoList.length === 0)
+        alert('Already Empty!');
+    else {
+        todoList = [];
+        renderTodo();
+    }
 }
