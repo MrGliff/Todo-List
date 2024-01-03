@@ -5,16 +5,21 @@ html {
 }
 
 body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #b3c0a4;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    background-color: #edf2f4;
+    background-color: #F0FFFF;
 }
 
 h1 {
     text-align: center;
+    color: black;
+    /* color: #ee9b00; */
 }
 
 hr {
     border: 1px solid black;
+    /* border: 1px solid white; */
     margin-bottom: 1rem;
 }
 
@@ -26,7 +31,8 @@ hr {
     height: 1.2rem;
 }
 
-.todoInput, .dateInput {
+.todoInput,
+.dateInput {
     margin-right: 1rem;
 }
 
@@ -43,8 +49,8 @@ hr {
 
 .todoList {
     display: grid;
-    grid-template-columns: 200px 150px 100px 100px;
-    grid-row-gap: 1rem;
+    grid-template-columns: 30px 250px 100px 100px;
+    grid-row-gap: 0.5rem;
     justify-content: center;
     align-items: center;
 }
@@ -55,12 +61,12 @@ hr {
     font-size: small;
     height: 2rem;
     width: 6.25rem;
-    background-color: #FCBF49;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #fcbf49;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
     font-size: medium;
     font-weight: bold;
     transition: 0.1s ease-in-out;
-
 }
 
 .add:hover {
@@ -70,7 +76,8 @@ hr {
 .deleteButton {
     border: none;
     border-radius: 5px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
     font-size: small;
     font-weight: bold;
     height: 2rem;
@@ -89,7 +96,8 @@ hr {
 .incompleteButton {
     border: none;
     border-radius: 5px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
     font-size: small;
     font-weight: bold;
     height: 2rem;
@@ -109,7 +117,8 @@ hr {
 .completeButton {
     border: none;
     border-radius: 5px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
     font-size: small;
     font-weight: bold;
     height: 2rem;
@@ -134,7 +143,8 @@ hr {
 .clearAll {
     border: none;
     border-radius: 5px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
     font-size: small;
     font-weight: bold;
     height: 2rem;
@@ -146,6 +156,12 @@ hr {
 }
 
 .clearAll:hover {
-    border: 1px dashed #fff;
-    transition: 0.3s smooth;
+    box-shadow: -4px 4px red;
+    transform: translate(3px, -3px);
+    transition: 0.3s ease;
+}
+
+.completeTask {
+    text-decoration: line-through;
+    color: gray;
 }

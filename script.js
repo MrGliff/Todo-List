@@ -17,13 +17,13 @@ function renderTodo() {
         const todoObject = todoList[i];
         const { name, dueDate, isCompleted } = todoObject;
         todoHTML += `
-            <div class=>${name}</div>
+            <input type="checkbox" class="completeCheckbox" onclick="completeTask(${i})" ${isCompleted ? 'checked' : ''}/>
+            <div class="${isCompleted ? 'completeTask' : 'incompleteTask'}">${name}</div>
             <div>${dueDate}</div>
-            <button onclick="completeTask(${i})" class="${isCompleted ? 'completeButton' : 'incompleteButton'}">${isCompleted ? 'Completed' : 'Incomplete'}</button>
             <button onclick="
             todoList.splice(${i}, 1);
             renderTodo();
-            "class="deleteButton">Delete</button>
+            "class="deleteButton">Remove</button>
             `;
     }
 
